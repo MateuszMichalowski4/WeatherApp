@@ -1,0 +1,118 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.App {
+  text-align: center;
+}
+
+
+body, html, #root, .main-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.hourly-bar{
+  margin-top: 30px;
+}
+
+.weather-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-left: auto;
+  font-style: italic;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.weather-icon-container img {
+  width: 60px;
+  height: 60px;
+}
+
+.hour-button {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    color: white; 
+    padding: 8px 16px; 
+    margin: 4px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .selected-hour {
+    background-color: rgba(255, 255, 255, 0.6); 
+  }
+
+  .hour-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+@media (min-width: 601px) {
+  .search-input {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  h2, h3, p {
+    font-size: 22px;
+  }
+
+  .weather-icon-container img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media (min-width: 901px) {
+  .search-input {
+    padding: 14px;
+    font-size: 20px;
+  }
+
+  h2, h3, p {
+    font-size: 25px;
+  }
+
+  .weather-icon-container img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
+  
+
